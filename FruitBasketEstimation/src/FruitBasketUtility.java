@@ -20,7 +20,6 @@ public class FruitBasketUtility {
 	}
 
     public int calculateBill(Stream<FruitBasket> fruitBasketStream) {
-
         return fruitBasketStream
                 .mapToInt(fb -> fb.getWeightInKgs() * fb.getPricePerKg())
                 .sum();
